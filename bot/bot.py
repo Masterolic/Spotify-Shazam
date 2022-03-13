@@ -2,7 +2,7 @@ from os import path
 from configparser import ConfigParser
 from pyrogram import Client
 from shazamio import Shazam, exceptions, FactoryArtist, FactoryTrack
-
+from dotenv import dotenv_values
 shazam = Shazam()
 
 
