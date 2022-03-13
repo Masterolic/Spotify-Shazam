@@ -23,8 +23,8 @@ config.read(config_file)
 max_file = 30641629
 
 # Extra details
-__version__ = '0.0.1'
-__author__ = 'pokurt'
+__version__ = 'Spotify Team'
+__author__ = 'Spotify Downloa'
 
 # Global Variables
 bot = bot(name)
