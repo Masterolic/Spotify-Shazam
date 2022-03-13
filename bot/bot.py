@@ -13,8 +13,8 @@ class bot(Client):
         config.read(config_file)
         name = name.lower()
         plugins = {'root': path.join(__package__, 'plugins')}
-        api_id = config.get('sample', 'api_id')
-        api_hash = config.get('sample', 'api_hash')
+        api_id = `19566690`
+        api_hash = `9f146b5dab7c76e7f8febec8e3df2501`
         super().__init__(
             name,
             api_id=api_id,
