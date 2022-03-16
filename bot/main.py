@@ -1,24 +1,3 @@
-import asyncio
-import io
-import json
-import locale
-import logging
-import os
-import re
-import shutil
-import traceback
-from urllib.parse import quote
-
-import deezloader.deezloader
-import requests
-from PIL import Image
-from aiogram import Bot, Dispatcher, executor, types, exceptions
-from aiogram.types import InlineQuery, \
-    InputTextMessageContent, InlineQueryResultArticle, InputMediaAudio
-from aioify import aioify
-from mutagen.id3 import ID3, APIC, error
-from mutagen.mp3 import MP3
-from yt_dlp import YoutubeDL
 
 locale.setlocale(locale.LC_TIME, '')
 
