@@ -116,20 +116,6 @@ downloading_users = []
 bot = Bot(token=os.environ.get('TELEGRAM_TOKEN'))
 dp = Dispatcher(bot)
 
-LANGS_FILE = json.load(open('langs.json'))
-LANG = os.environ.get('BOT_LANG')
-
-if LANG is not None:
-    print("Lang : " + LANG)
-else:
-    print("Lang : en")
-    LANG = 'en'
-
-
-def __(s):
-    return LANGS_FILE[s][LANG]
-
-
 def crop_center(pil_img, crop_width, crop_height):
     img_width, img_height = pil_img.size
     return pil_img.crop(((img_width - crop_width) // 2,
