@@ -27,4 +27,4 @@ __version__ = 'Spotify Team'
 __author__ = 'Spotify Downloa'
 
 # Global Variables
-bot = bot(
+
