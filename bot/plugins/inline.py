@@ -14,7 +14,7 @@ async def inline_func(client, query):
             switch_pm_parameter='help_inline',
         )
         return
-    if string.split()[0] == 'related':
+    if string.split()[0] == 'related' , 'a','':
         if len(string.split()) == 1:
             await client.answer_inline_query(
                 query.id,
