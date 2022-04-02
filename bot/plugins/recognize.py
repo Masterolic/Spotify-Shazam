@@ -7,12 +7,11 @@ import os
 
 @bot.on_message(  filters.incoming )
 async def delete(bot, message):
-    await message.reply_text("⏳")
-    await message.delete("")
     file_size = message.audio or message.video or message.voice
     file = await message.download(f'{bot.rnd_id()}.mp3')
     r = (await bot.recognize(file)).get('track', None)
     os.remove(file)
+    await message.reply_text("⏳")
     if r is None:
         await message.reply_text(
             '**⚠️ Cannot recognize the audio**'
