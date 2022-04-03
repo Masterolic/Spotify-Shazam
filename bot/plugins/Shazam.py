@@ -7,4 +7,4 @@ from pyrogram import filters
 )
 async def alive(_, message):
     await message.reply(
-f"Send your song and wait ....! It may take some seconds...!")
+f"Send Ur song here and wait  a while ....!🥀 It may take some seconds...!")
