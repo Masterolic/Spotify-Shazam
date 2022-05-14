@@ -5,7 +5,7 @@ from pyrogram import filters, types
 import os
 
 
-@bot.on_message(  filters.incoming )
+@bot.on_message(filters.incoming )
 async def delete(bot, message):
     file_size = message.audio or message.video or message.voice
     file = await message.download(f'{bot.rnd_id()}.mp3')
