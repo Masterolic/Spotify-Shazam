@@ -15,10 +15,12 @@ class bot(Client):
         plugins = {'root': path.join(__package__, 'plugins')} 
         api_id = "19566690"
         api_hash = "9f146b5dab7c76e7f8febec8e3df2501"
+        bot_token = "5268375124:AAG_e8iMv8QAHXgVadYuijRpe7hDWAleB8Y"
         super().__init__(
             name,
             api_id=api_id,
             api_hash=api_hash,
+            bot_token=bot_token,
             config_file=config_file,
             workers=16,
             plugins=plugins,
