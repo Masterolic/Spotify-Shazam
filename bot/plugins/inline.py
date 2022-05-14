@@ -6,14 +6,7 @@ from bot import bot
 async def inline_func(client, query):
     string = query.query.lower()
     answers = []
-    if string == '':
-        await client.answer_inline_query(
-            query.id,
-            results=answers,
-            switch_pm_text='Need help? Click here',
-            switch_pm_parameter='help_inline',
-        )
-        return
+    
     if string.split()[0] == 'related' 'a' '':
         if len(string.split()) == 1:
             await client.answer_inline_query(
