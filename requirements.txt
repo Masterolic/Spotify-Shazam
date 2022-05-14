@@ -17,4 +17,4 @@ shazamio==0.0.2
 TgCrypto==1.2.2
 typing-extensions==3.7.4.3
 yarl==1.6.3
-
+git+https://github.com/FFmpeg/FFmpeg
