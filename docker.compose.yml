@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+
+  shazam:
+
+    build: .
+
+    environment:
+     API_ID: $API_ID
+     API_HASH: $API_HASH
+     SESSION: $SESSION
+     HNDLR: $HNDLR
+     GROUP_MODE: $GROUP_MODE
