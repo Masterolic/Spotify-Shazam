@@ -5,13 +5,18 @@ from pyrogram import filters, types
 import os
 
 
-@bot.on_message(filters.incoming )
-async def delete(bot, message):
+@bot.on_message(filters.incoming | filters.audio | filters.video | filters.voice)
+async def voice_handler(_, message):
     file_size = message.audio or message.video or message.voice
+    await message.reply_text("⏳")
+    if max_file < file_size.file_size :
+        await message.reply_text(
+            "**⚠️ Max file size has been reached.**"
+        )
+        return
     file = await message.download(f'{bot.rnd_id()}.mp3')
     r = (await bot.recognize(file)).get('track', None)
     os.remove(file)
-    await message.reply_text("⏳")
     if r is None:
         await message.reply_text(
             '**⚠️ Cannot recognize the audio**'
